@@ -1,0 +1,55 @@
+<mvc:View controllerName="gustavo.ui5-curriculum-vitae.controller.baseView" xmlns:layout="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.uxap" xmlns:m="sap.m">
+	<ObjectPageLayout showTitleInHeaderContent="true">
+		<headerTitle>
+			<ObjectPageDynamicHeaderTitle>
+				<expandedHeading>
+						<m:Title text="Gustavo Martins Paulo" wrapping="true"/>
+				</expandedHeading>
+
+				<snappedHeading>
+					<m:FlexBox  fitContainer="true" alignItems="Center">
+						<m:Avatar src="./images/profileImage.jpg" class="sapUiTinyMarginEnd"/>
+						<m:Title text="Gustavo Martins Paulo" wrapping="true"/>
+					</m:FlexBox>
+				</snappedHeading>
+
+				<expandedContent>
+					<m:Text text="{i18n>designation}"/>
+				</expandedContent>
+
+				<snappedContent>
+					<m:Text text="{i18n>designation}"/>
+				</snappedContent>
+
+				<snappedTitleOnMobile>
+					<m:Title text="{i18n>designation}"/>
+				</snappedTitleOnMobile>
+			</ObjectPageDynamicHeaderTitle>
+		</headerTitle>
+		
+		<headerContent>
+			<m:FlexBox wrap="Wrap">
+				<m:Avatar class="sapUiSmallMarginEnd" src="./images/profileImage.jpg"  displaySize="L" />
+
+					<layout:VerticalLayout class="sapUiSmallMarginBeginEnd">
+						<m:Link text="+55 11 99207-8759"/>
+						<m:Link text="gu.marti.paulo@gmail.com" href="mailto:gu.marti.paulo@gmail.com" />
+					</layout:VerticalLayout>
+
+					<layout:HorizontalLayout class="sapUiSmallMarginBeginEnd">
+						<m:Image src="./test-resources/sap/uxap/images/linkedin.png" activeSrc="https://www.linkedin.com/in/gustavo-martins-paulo-b61369138/" />
+					</layout:HorizontalLayout>
+
+				<layout:VerticalLayout class="sapUiSmallMarginBeginEnd">
+					<m:Label text="{i18n>placeOfBirth}: {i18n>brazil}"/>
+					<m:Label text="{i18n>age}: 22 {i18n>yearsOld}"/>
+					<m:Label text="{i18n>maritalState}: {i18n>single}"/>
+				</layout:VerticalLayout>
+
+				<layout:VerticalLayout class="sapUiSmallMarginBeginEnd">
+					<m:Label text="Santo André - SP, BR"/>
+				</layout:VerticalLayout>
+			</m:FlexBox>
+		</headerContent>
+	</ObjectPageLayout>
+</mvc:View>
